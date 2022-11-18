@@ -1,8 +1,10 @@
 class Gist {
   constructor(name, description) {
     this.name = name;
-    this.description = description;
-  }
+    this.description = 'Untitled';
+    if (description) {
+      this.description = description;
+    }}
 
   get url() {
     return 'https://gist.github.com/' + this.name;
