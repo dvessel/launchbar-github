@@ -12,8 +12,8 @@ class Gist {
 
   toMenuItem() {
     return {
-      title: this.name,
-      subtitle: this.description,
+      title: this.description,
+      subtitle: this.name,
       alwaysShowsSubtitle: true,
       url: this.url,
       icon: 'gistTemplate.png',
